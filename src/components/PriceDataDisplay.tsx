@@ -1,13 +1,13 @@
 "use client";
 
-import { PricingData } from '@/types';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import {PricingData} from "@/types";
+import {Card, CardHeader, CardTitle, CardContent} from "@/components/ui/card";
 
 interface PriceDataDisplayProps {
   pricingData: PricingData[];
 }
 
-export const PriceDataDisplay = ({ pricingData }: PriceDataDisplayProps) => {
+export const PriceDataDisplay = ({pricingData}: PriceDataDisplayProps) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-6xl">
       {pricingData.map((item, index) => (
